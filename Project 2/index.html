@@ -9,11 +9,13 @@
 </head>
 <body>
     <header class="header">
-        <div class="header_wrapper wrapper">
-            <div class="header_logo">
+        <div class="h-f_wrapper wrapper wrapper-padding">
+            <div class="logo">
                 IC "Repair Design Project"
             </div>
-            <nav class="header_nav">
+            <nav class="nav">
+                <input type="checkbox" id="menu">
+			    <label for="menu"></label>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">PROJECTS</a></li>
@@ -23,36 +25,33 @@
                     <li><a href="#">CONTACTS</a></li>
                 </ul>
             </nav>
-            <a class="header_number-tel" href="tel:+79287683239">+7 (928) 768-32-39</a>
-            <button class="header_button">Request a call</button>
+            <a class="number-tel" href="tel:+79287683239">+7 (928) 768-32-39</a>
+            <button class="button h-f_button">Request a call</button>
         </div>
     </header>
     <main class="main">
         <div class="home">
             <div class="wrapper">
-                <div class="home_wrapper">
+                <div class="home_wrapper wrapper-padding">
                     <h1>Turnkey Repair in the 
                         city of <span>Rostov-on-Don</span></h1>
-                    <div class="home_text">
-                        <p>Get ready-made turnkey repairs on time
+                    <p class="home_text">Get ready-made turnkey repairs on time
                         with work time saving up to 45 days and 20% from
                         cost of materials due to the organization of work</p>
-                    </div>
-                    <div class="home_buttons">
-                        <button>CALCULATE THE COST</button>
-                        <button>SUBMIT YOUR APPLICATION</button>
-                    </div>
+                    <button class="button home_button-1">CALCULATE THE COST</button>
+                    <button class="button home_button-2">SUBMIT YOUR APPLICATION</button>
                 </div>
             </div>
         </div>
         <div class="projects">
-            <div class="projects_wrapper">
+            <div class="projects_wrapper wrapper-padding">
                 <div class="projects_completed-projects">
                     <h2>Completed projects</h2>
-                    <div class="projects_text">
-                        <p>Only a small part of the work performed by our company is presented on the site. 
-                            For 14 years on in the construction 
-                            market we have made happy more than 1000 families</p>
+                    <p class="projects_text">Only a small part of the work performed by our company is presented on the site. 
+                        For 14 years on in the construction 
+                        market we have made happy more than 1000 families</p>
+                    <div class="projects_slider-images--media">
+                        <img src="images/projects_slide_1.jpg" alt="Rostov-on-Don, Admiral">
                     </div>
                     <div class="projects_description">
                         <div>
@@ -85,9 +84,9 @@
                 </div>
                 <div class="projects_slider">
                     <div class="projects_slider-list">
-                        <span class="active">Rostov-on-Don, Admiral</span>
-                        <span>Sochi Thieves</span>
-                        <span>Rostov-on-Don Patriotic</span>
+                        <a href="#">Rostov-on-Don, Admiral</a>
+                        <a href="#">Sochi Thieves</a>
+                        <a href="#">Rostov-on-Don Patriotic</a>
                     </div>
                     <div class="projects_slider-images">
                         <img src="images/projects_slide_1.jpg" alt="Rostov-on-Don, Admiral">
@@ -95,11 +94,11 @@
                 </div>
             </div>
         </div>
-        <div class="control">
-            <h2>online control</h2>
-            <span class="control_img-camera"></span>
+        <div class="control wrapper-padding">
+            <h2 class="h2-text">online control</h2>
+            <span class="img-style control_img-camera"></span>
             <div class="control_image">
-                <img src="images/control_image.jpg" alt="">
+                <img src="images/control_image.jpg" alt="video">
             </div>
             <span class="control_img-style"></span>
             <p class="control_text">At each facility, a camera is installed that broadcasts the progress of 
@@ -109,26 +108,24 @@
             <form action="#" class="control_form">
                 <div class="control_form-information">
                     <p>
-                        <label for="control_input-text">Name</label>
-                        <input type="text" id="control_input-text" placeholder="What is your name:">
+                        <span class="form-span">Name</span>
+                        <input class="form-input control_form-input" type="text" placeholder="What is your name:">
                     </p>
                     <p>
-                        <label for="control_input-tel">Phone</label>
-                        <input type="tel" id="control_input-tel" placeholder="Your phone number:">
+                        <span class="form-span">Phone</span>
+                        <input class="form-input control_form-input" type="tel" placeholder="Your phone number:">
                     </p>
-                    <p>
-                        <input type="submit" value="submit">
-                    </p>
+                    <div class="control_form-agree">
+                        <input class="input-checkbox" type="checkbox" id='control_input-checkbox' checked>
+                        <label class="form-checkbox" for="control_input-checkbox">I agree to the processing of personal data</label>
+                    </div>
                 </div>
-                <div class="control_form-agree">
-                    <input type="checkbox" id='control_input-checkbox' checked>
-                    <label for="control_input-checkbox">I agree to the processing of personal data</label>
-                </div>
+                <input class="button control_form-submit" type="submit" value="submit">
             </form>
         </div>
-        <div class="repair">
-            <h2>TYPES OF REPAIR</h2>
-            <span class="repair_img-tools"></span>
+        <div class="repair wrapper-padding">
+            <h2 class="h2-text">TYPES OF REPAIR</h2>
+            <span class="img-style repair_img-tools"></span>
             <div class="repair_services">
                 <div>
                     <img src="images/repair_image_1.jpg" alt="Redecorating">
@@ -180,6 +177,179 @@
                 </div>
             </div>
         </div>
+        <div class="advantages wrapper-padding">
+            <div class="advantages_left">
+                <ul>
+                    <li>Our specialist will arrive for measurements per day
+                        contact, or appoint a date convenient for you</li>
+                    <li>Free metering</li>
+                    <li>Free consultation</li>
+                    <li>Get a cost estimate and
+                        the timing of your future repairs</li>
+                </ul>
+            </div>
+            <div class="advantages_right">
+                <form action="#" class="advantages_form">
+                    <h4>Leave a request for free
+                        departure of the measurer</h4>
+                    <span class="form-span">Name</span>
+                    <input class="form-input advantages_form-filling" type="text" placeholder="What is your name:">
+                    <span class="form-span">Phone</span>
+                    <input class="form-input advantages_form-filling" type="tel" placeholder="Your phone number:">
+                    <span class="form-span">Email</span>
+                    <input class="form-input advantages_form-filling" type="email" placeholder="Your email">
+                    <input class="input-checkbox" id='advantages_input-checkbox' type="checkbox" checked>
+                    <label class="form-checkbox advantages_label-checkbox" for="advantages_input-checkbox">I agree to the processing of personal data</label>
+                    <div class="advantages_form-submit">
+                        <input class="button" type="submit" value="Call the measurer">
+                    </div>
+                </form>
+                <div class="advantages_discount">
+                    Help save 10 - 20% of the cost of materials
+                </div>
+            </div>
+        </div>
+        <div class="fantasies">
+            <div class="fantasies_wrapper wrapper-padding">
+                <div class="fantasies_left">
+                    <h2>We realize your wildest fantasies</h2>
+                    <ul>
+                        <li><a href="#">American classic</a></li>
+                        <li><a href="#">Empire</a></li>
+                        <li><a href="#">Classical</a></li>
+                        <li><a href="#">Loft</a></li>
+                        <li><a href="#">Minimalism</a></li>
+                        <li><a href="#">Provence</a></li>
+                        <li><a href="#">Romanticism</a></li>
+                        <li><a href="#">Scandinavian style</a></li>
+                        <li><a href="#">Mediterranean style</a></li>
+                        <li><a href="#">High tech</a></li>
+                        <li><a href="#">Eclecticism</a></li>
+                    </ul>
+                </div>
+                <div class="fantasies_middle">
+                    <img src="images/fantasies_image_1.jpg" alt="wildest fantasies">
+                    <img src="images/fantasies_image_2.jpg" alt="wildest fantasies">
+                </div>
+                <div class="fantasies_right">
+                    <img src="images/fantasies_image_3.jpg" alt="wildest fantasies">
+                    <img src="images/fantasies_image_4.jpg" alt="wildest fantasies">
+                </div>
+            </div>
+        </div>
+        <div class="clients wrapper-padding">
+            <h2 class="h2-text">our clients</h2>
+            <span class="img-style clients_img-handshake"></span>
+            <p class="clients_text-recommend">80% of our customers recommend us to their
+                friends and family.</p>
+            <div class="clients_description">
+                <div class="clients_client">
+                    <div class="clients_author">
+                        <span><img src="images/clients_avatar_1.jpg" alt="avatar"></span>
+                        <h3>Fedosova Maria Konstantinovna</h3>
+                    </div>
+                    <p>I want to thank the guys for their work. We put your shower part in repair.
+                        I am very grateful that I referred to the repair as to my own. 
+                        Great thanks I express the project to georgia for its professionalism 
+                        and approach. The repair process was turned out in terms, faster than 
+                        anticipated. Team mobile and professional. Works performed qualitatively 
+                        without comments. Quality satisfied. Prices democratic. 
+                        I recommend these masters.</p>
+                    <div class="clients_m2-days">
+                        <span>40 m2</span>
+                        <span>48 DAYS</span>
+                    </div>
+                </div>
+                <div class="clients_client">
+                    <div class="clients_author">
+                        <span><img src="images/clients_avatar_2.jpg" alt="avatar"></span>
+                        <h3>Afanasyev Sergey Alexandrovich</h3>
+                    </div>
+                    <p>I want to thank the guys for their work. We put your shower part in repair.
+                        I am very grateful that I referred to the repair as to my own. 
+                        Great thanks I express the project to georgia for its professionalism 
+                        and approach. The repair process was turned out in terms, faster than 
+                        anticipated. Team mobile and professional. Works performed qualitatively 
+                        without comments. Quality satisfied. Prices democratic. 
+                        I recommend these masters.</p>
+                    <div class="clients_m2-days">
+                        <span>90 m2</span>
+                        <span>128 DAYS</span>
+                    </div>
+                </div>
+                <div class="clients_client">
+                    <div class="clients_author">
+                        <span><img src="images/clients_avatar_3.jpg" alt="avatar"></span>
+                        <h3>Kiriev Egor Leonidovich</h3>
+                    </div>
+                    <p>I want to thank the guys for their work. We put your shower part in repair.
+                        I am very grateful that I referred to the repair as to my own. 
+                        Great thanks I express the project to georgia for its professionalism 
+                        and approach. The repair process was turned out in terms, faster than 
+                        anticipated. Team mobile and professional. Works performed qualitatively 
+                        without comments. Quality satisfied. Prices democratic. 
+                        I recommend these masters.</p>
+                    <div class="clients_m2-days">
+                        <span>56 m2</span>
+                        <span>86 DAYS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="questions wrapper-padding">
+            <form class="questions_form" action="#">
+                <h2 class="h2-text">have any questions?</h2>
+                <div class="questions_input-name-tel">
+                    <div>
+                        <span class="form-span">Name</span>
+                        <input class="form-input" type="text" placeholder="What is your name:">
+                    </div>
+                    <div>
+                        <span class="form-span">Phone</span>
+                        <input class="form-input" type="tel" placeholder="Your phone number:">
+                    </div>
+                </div>
+                <span class="form-span">Question</span>
+                <input class="form-input questions_form-input-question" type="text" placeholder="I want to know:">
+                <div class="questions_label-checkbox">
+                    <input class="input-checkbox" id="questions_input-checkbox" type="checkbox" checked>
+                    <label class="form-checkbox" for="questions_input-checkbox">I agree to the processing of personal data</label>
+                </div>
+                <input class="button questions_form-submit" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="contacts">
+            <div class="contacts_wrapper wrapper-padding">
+                <div class="contacts_address">
+                    <address>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum</address>
+                    <a href="tel:+79287683229">Tel +7 (928) 768 32 29</a>
+                </div>
+                <div>
+                    <a class="contacts-a contacts-mail" href="mailto:#"></a>
+                    <a class="contacts-a contacts-instagram" href="#" target="_blank"></a>
+                </div>
+                <div class="contacts-map"><img src="img/contacts_map.jpg" alt="map"></div>
+            </div>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="h-f_wrapper wrapper wrapper-padding">
+            <div class="logo">
+                IC "Repair Design Project"
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">MEASUREMENT</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <a class="number-tel" href="tel:+79287683239">+7 (928) 768-32-39</a>
+            <button class="button h-f_button">Request a call</button>
+        </div>
+    </footer>
 </body>
 </html>
