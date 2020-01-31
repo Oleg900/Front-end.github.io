@@ -1,0 +1,327 @@
+@font-face {
+    font-family: "Nunito Sans";
+    src: url('../fonts/Nunito_Sans.woff'),
+        url('../fonts/Nunito_Sans.ttf');
+}
+
+@font-face {
+    font-family: "Yeseva One";
+    src: url('../fonts/Yeseva_One.woff'),
+        url('../fonts/Yeseva_One.ttf');
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    height: 100%;
+    font: 16px "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+	width: 100%;
+    height: 100%;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.projects {
+    width: 100%;
+    background: #131313;
+    padding: 20px 0;
+}
+
+.projects_wrapper {
+    max-width: 1171px;
+    width: 93.23%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects-slider {
+    display: flex;
+    position: relative;
+    transition: left .5s;
+    left: 0;
+    flex-shrink: 0;
+}
+
+.projects-slide {
+    display: flex;
+    justify-content: space-between;
+    width: 1171px;
+}
+
+.projects_slider-images--media {
+    display: none;
+}
+
+.projects_completed-projects {
+    max-width: 442px;
+    width: 41%;
+    margin-top: 70px;
+}
+
+.projects_completed-projects h2 {
+    width: 253px;
+    margin-bottom: 34px;
+    font-family: "Yeseva One";
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.projects_completed-projects h2::after {
+    content: "";
+    display: inline-block;
+    width: 92px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    border-top: 1px solid #E3B873;
+}
+
+.projects_text {
+    font-size: 14px;
+    line-height: 27px;
+    color: #fff;
+}
+
+.projects_description {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0 80px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.projects_description div {
+    width: 50%;
+    margin-top: 34px;
+}
+
+.projects_description h3 {
+    font-family: "Yeseva One";
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.projects_slaider-control {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.projects_slaider-control span {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.projects_slider-images img,
+.projects_slider-images--media img{
+    max-width: 679px;
+    width: 100%;
+}
+
+.projects_slider-buttons {
+    display: inline;
+}
+
+.projects_slider-button {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    width: 10px;
+    height: 10px;
+    margin-right: 17px;
+}
+
+.projects_slider-button.active {
+    background: #fff;
+}
+
+.projects_slider-button:last-of-type {
+    margin: 0;
+}
+
+.projects_slider-arrow-back {
+    background: url("../img/projects_slider_arrow_back.svg") no-repeat;
+    width: 41px;
+    height: 13px;
+    margin-right: 29px;
+}
+
+.projects_slider-arrow-next {
+    background: url("../img/projects_slider_arrow_next.svg") no-repeat;
+    width: 41px;
+    height: 13px;
+    margin-left: 29px;
+}
+
+.projects_slider {
+    max-width: 679px;
+    width: 59%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.projects_slider-list {
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 4%;
+}
+
+.projects_slider-list span {
+    cursor: pointer;
+    margin-right: 15px;
+    padding-bottom: 8px;
+    font-family: "Yeseva One";
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    transition: .2s;
+}
+
+.projects_slider-list span:hover {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    padding-bottom: 7px;
+    transition: .2s;
+}
+
+.projects_slider-list .active {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    padding-bottom: 7px;
+    transition: .2s;
+}
+
+@media screen and (max-width: 940px) {
+    .projects-slide {
+        flex-direction: column;
+    }
+
+    .projects_wrapper {
+        width: 93%;
+        margin: 0 auto 20px;
+    }
+
+    .projects_description {
+        width: 100%;
+    }
+
+    .projects_slider {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .projects_completed-projects {
+        width: 70%;
+        max-width: 700px;
+        margin: 0 auto 60px;
+    }
+
+    .projects_slider-list {
+        width: 80%;
+        top: 46%;
+        left: 11%;
+    }
+
+    .projects_slaider-control{
+        width: 100%;
+        height: 300px;
+    }
+
+    .projects_slider-buttons {
+        display: none;
+    }
+
+    .projects_slider-arrow-back,
+    .projects_slider-arrow-next {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 8%;
+    }
+    
+    .projects_slider-arrow-back {
+        background: url(../img/projects_slider_arrow_back_media.svg) no-repeat center center #E3B873;
+        left: 15%;
+    }
+
+    .projects_slider-arrow-next {
+        background: url(../img/projects_slider_arrow_next_media.svg) no-repeat center center #E3B873;
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .projects_slider-arrow-back {
+        left: 5%;
+    }
+
+    .projects_slider-arrow-next {
+        right: 5%;
+    }
+
+    .projects_slider-list {
+        display: none;
+    }
+
+    .projects_completed-projects h2::after,
+    .projects_slider {
+        display: none;
+    }
+
+    .projects_slider-images--media {
+        display: block;
+        margin: 36px auto;
+    }
+
+    .projects_completed-projects {
+        width: 100%;
+    }
+
+    .projects_text {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .projects_description {
+        width: 100%;
+    }
+
+    .projects_completed-projects h2 {
+        margin: 0 auto 34px;
+        text-align: center;
+    }
+
+    .projects_slider-arrow-back, .projects_slider-arrow-next {
+        top: -100%;
+    }
+}
